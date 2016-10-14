@@ -1,0 +1,88 @@
+.aboutme
+	padding-top: 20px
+
+	.section-header
+		border-top: outset rgba(103, 58, 183, 0.16) 1px
+		@extend .sectionheads
+		font-size: 16pt
+
+	.details
+		max-width: 800px
+		width: 80%
+		height: auto
+		margin: 0 auto
+		+display(flex)
+		+align-items(center)
+		+justify-content(space-around)
+
+		.coolpic
+			height: 120px
+			width: 180px
+			display: inline-block
+			float: left
+			margin: 10px
+
+			img
+				max-width: 100%
+				border-radius: 5px
+
+		.personal-details
+			width: 70%
+			font-family: $Overlock
+			font-size: 1.4em
+
+			td
+				padding: 2px
+				padding-left: 10px
+
+
+	.quote
+		font-family: $Overlock
+		font-size: 20pt
+		padding: 0 10%
+		max-width: 800px
+		margin: 0 auto
+		border-radius: 12px
+		text-align: center
+		+background(linear-gradient($bgcolor, $bgcolor))
+		margin-top: 2%
+		margin-bottom: 7%
+
+		span
+			height: 20px
+			width: 40px
+
+		.icon-quote-top
+			display: inline-block
+			background-image: url('/assets/images/icon-quote-top.png')
+			background-repeat: no-repeat
+
+
+		.icon-quote-bottom
+			display: inline-block
+			background: url('/assets/images/icon-quote-bottom.png')
+			background-repeat: no-repeat
+
+	@media screen and (max-width: 540px)
+		.details
+			display: block
+			
+			.coolpic
+				float: none
+				display: block
+				border-radius: 8px
+				margin: 0 auto 30px
+
+			.personal-details
+				width: 80%
+				font-size: 1.2em
+				margin: 0 auto
+		.quote
+			display: relative
+			font-size: 1.6em
+			margin-bottom: 10%
+
+	@media screen and (min-width: 540px) and (max-width: 700px)
+		.details
+			.personal-details
+				font-size: 1.1em

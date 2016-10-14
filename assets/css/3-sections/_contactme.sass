@@ -1,0 +1,106 @@
+.contactme
+	padding-top: 20px
+
+	.section-header
+	border-top: outset rgba(103, 58, 183, 0.16) 1px
+	@extend .sectionheads
+
+	.email-address
+		a
+			text-decoration: none
+			color: black
+		p
+			margin-top: 2px
+			display: inline-block
+			text-align: center
+			font:
+				family: $Overlock
+				size: 1.4em
+				weight: 400
+
+			&:hover
+				+transform(scale(1.05))
+				text-shadow: #b9b9ff 1px 1px
+				text-decoration: underline
+
+	.social-icons
+		+display(flex)
+		// align-text: center
+		max-width: 600px
+		margin: 0 auto
+		+justify-content(space-around)
+
+		img
+			+size(50px)
+
+			&:hover
+				+transform(scale(1.1))
+
+	.contact-form
+		width: 70%
+		margin: 0 auto
+		text-align: left
+
+		label
+			p
+				color: #334cc6
+				display: block
+				font-family: $OverlockSC
+				font-size: 0.8em
+				font-weight: 500
+				line-height: 1
+				margin-bottom: 0
+
+			input[type="text"], input[type="email"]
+				width: 80%
+				height: 30px
+				padding-left: 4px
+				border-radius: 4px
+
+			@media screen and (max-width: 540px)
+				input[type="text"], input[type="email"]
+					width: 95%
+					height: 28px 
+
+		p:last-of-type
+			margin-bottom: 10px
+
+			input
+				width: 50%
+				height: 50px
+
+		textarea
+			width: 100%
+			height: 200px
+			resize: none
+
+		input[type="submit"] 
+			float: right
+			+background(linear-gradient(#8080FF, #8080BB))
+			color: #334cc6
+			font-size: 0.75em
+
+	@media screen and (max-width: 940px)
+		.contact-form
+			width: 90%
+
+	@media screen and (max-width: 540px)
+		.contact-form
+			width: 94%
+
+			label
+				input[type="text"], input[type="email"]
+					width: 100%
+
+			input[type="submit"] 
+				float: none
+				width: 90%
+				height: 30px
+				margin: 0 4%
+				font-size: 0.6em
+	// .email-address
+	// .social-icons
+	// .contact-form
+	// form
+
+

@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Over+the+Rainbow|Overlock|Overlock+SC" rel="stylesheet");
+.sectionheads, .aboutme .section-header, .contactme {
+  text-align: center;
+  font-family: "Overlock SC", cursive;
+  font-size: 16pt;
+  font-weight: 500; }
+
+body {
+  background: -webkit-linear-gradient(#e9e9ff, #efefff);
+  background: linear-gradient(#e9e9ff, #efefff); }
+
+header {
+  height: 50px;
+  background: -webkit-linear-gradient(#8080FF, #e9e9ff);
+  background: linear-gradient(#8080FF, #e9e9ff);
+  position: relative; }
+  header .logo {
+    display: inline-block;
+    float: left;
+    margin-left: 20px; }
+    header .logo img {
+      height: 35px;
+      width: 35px;
+      position: absolute;
+      top: 50%;
+      margin-top: -17.5px; }
+  header nav {
+    float: right;
+    margin-right: 20px;
+    height: 20px;
+    position: relative;
+    top: 50%;
+    margin-top: -10px; }
+    header nav a {
+      display: inline-block;
+      margin-left: 28px;
+      color: rgba(0, 0, 0, 0.6);
+      font-family: "Overlock SC", cursive;
+      font-size: 14pt; }
+      header nav a:hover {
+        color: rgba(0, 0, 0, 0.99); }
+    header nav .search {
+      height: 16px;
+      width: 16px;
+      display: inline-block; }
+  @media screen and (max-width: 540px) {
+    header .logo img {
+      height: 25px;
+      width: 25px; }
+    header nav a {
+      font-size: 10pt;
+      margin-left: 18px; }
+    header nav .search {
+      height: 12px;
+      width: 12px; } }
+  @media screen and (max-width: 400px) {
+    header .logo img {
+      height: 20px;
+      width: 20px; }
+    header nav a {
+      font-size: 8pt;
+      margin-left: 8px; }
+    header nav .search {
+      height: 10px;
+      width: 10px; } }
+  @media screen and (max-width: 280px) {
+    header .logo {
+      display: block;
+      float: none;
+      text-align: center; }
+      header .logo img {
+        height: 20px;
+        width: 20px;
+        transiton: translate(-10, 0); }
+    header nav {
+      float: none;
+      text-align: center; }
+      header nav a {
+        font-size: 6pt;
+        margin-left: 2px; }
+      header nav .search {
+        height: 6px;
+        width: 6px; } }
+  @media screen and (max-width: 160px) {
+    header .logo {
+      display: block;
+      float: none;
+      margin: 0 auto; }
+      header .logo img {
+        height: 14px;
+        width: 14px; }
+    header nav {
+      float: none;
+      text-align: center; }
+      header nav a {
+        font-size: 2pt; }
+      header nav .search {
+        display: none; } }
+
+.hero {
+  margin-top: 20px;
+  text-align: center;
+  position: relative; }
+  .hero .hero-engines {
+    width: 90%;
+    display: block;
+    margin: 0 auto; }
+    .hero .hero-engines img {
+      max-width: 100%; }
+    .hero .hero-engines .desktop {
+      width: 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
+      -webkit-box-pack: distribute;
+      -moz-box-pack: distribute;
+      box-pack: distribute;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around;
+      -ms-justify-content: space-around;
+      -o-justify-content: space-around;
+      justify-content: space-around;
+      -ms-flex-pack: distribute; }
+      .hero .hero-engines .desktop img {
+        width: 40%; }
+      .hero .hero-engines .desktop img.Front {
+        width: 29%;
+        -webkit-transition: -webkit-transform 300ms ease-in-out 10ms;
+        -moz-transition: -moz-transform 300ms ease-in-out 10ms;
+        transition: transform 300ms ease-in-out 10ms; }
+      .hero .hero-engines .desktop img.Front:hover {
+        -webkit-transform: rotateZ(810deg);
+        -moz-transform: rotateZ(810deg);
+        -ms-transform: rotateZ(810deg);
+        -o-transform: rotateZ(810deg);
+        transform: rotateZ(810deg); }
+  .hero .nicknames {
+    clear: both;
+    padding-top: 30px;
+    color: black;
+    font-family: "Overlock SC", cursive;
+    font-size: 20pt; }
+    .hero .nicknames span {
+      width: 18%;
+      border-right: solid #000 2px;
+      padding: 0 20px; }
+      .hero .nicknames span a {
+        text-decoration: none;
+        color: black; }
+      .hero .nicknames span a:visited {
+        color: black; }
+    .hero .nicknames span:nth-last-child(1) {
+      border-right: hidden; }
+    .hero .nicknames span:hover {
+      border: 0 2px 0 2px solid #000;
+      box-shadow: #673AB6 1px 2px 6px 6px;
+      border-radius: 2px;
+      border-left: solid #ccc 1px;
+      border-right: solid #ccc 1px; }
+  @media screen and (max-width: 720px) {
+    .hero .nicknames {
+      font-size: 12pt; } }
+  @media screen and (max-width: 540px) {
+    .hero .nicknames {
+      font-size: 10pt; } }
+  @media screen and (max-width: 450px) {
+    .hero .nicknames {
+      font-size: 8.5pt; }
+    .hero .hero-engines .desktop {
+      display: inline-block;
+      text-align: center; }
+      .hero .hero-engines .desktop img {
+        width: 95%; }
+      .hero .hero-engines .desktop img.Front {
+        width: 64%; } }
+  @media screen and (max-width: 340px) {
+    .hero .nicknames {
+      font-size: 7pt; } }
+  @media screen and (max-width: 240px) {
+    .hero .nicknames {
+      font-size: 6pt; } }
+  @media screen and (max-width: 100px) {
+    .hero .nicknames {
+      font-size: 3pt; } }
+
+.aboutme {
+  padding-top: 20px; }
+  .aboutme .section-header {
+    border-top: outset rgba(103, 58, 183, 0.16) 1px;
+    font-size: 16pt; }
+  .aboutme .details {
+    max-width: 800px;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: distribute;
+    -moz-box-pack: distribute;
+    box-pack: distribute;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: distribute; }
+    .aboutme .details .coolpic {
+      height: 120px;
+      width: 180px;
+      display: inline-block;
+      float: left;
+      margin: 10px; }
+      .aboutme .details .coolpic img {
+        max-width: 100%;
+        border-radius: 5px; }
+    .aboutme .details .personal-details {
+      width: 70%;
+      font-family: "Overlock", cursive;
+      font-size: 1.4em; }
+      .aboutme .details .personal-details td {
+        padding: 2px;
+        padding-left: 10px; }
+  .aboutme .quote {
+    font-family: "Overlock", cursive;
+    font-size: 20pt;
+    padding: 0 10%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    text-align: center;
+    background: -webkit-linear-gradient(#e9e9ff, #e9e9ff);
+    background: linear-gradient(#e9e9ff, #e9e9ff);
+    margin-top: 2%;
+    margin-bottom: 7%; }
+    .aboutme .quote span {
+      height: 20px;
+      width: 40px; }
+    .aboutme .quote .icon-quote-top {
+      display: inline-block;
+      background-image: url("/assets/images/icon-quote-top.png");
+      background-repeat: no-repeat; }
+    .aboutme .quote .icon-quote-bottom {
+      display: inline-block;
+      background: url("/assets/images/icon-quote-bottom.png");
+      background-repeat: no-repeat; }
+  @media screen and (max-width: 540px) {
+    .aboutme .details {
+      display: block; }
+      .aboutme .details .coolpic {
+        float: none;
+        display: block;
+        border-radius: 8px;
+        margin: 0 auto 30px; }
+      .aboutme .details .personal-details {
+        width: 80%;
+        font-size: 1.2em;
+        margin: 0 auto; }
+    .aboutme .quote {
+      display: relative;
+      font-size: 1.6em;
+      margin-bottom: 10%; } }
+  @media screen and (min-width: 540px) and (max-width: 700px) {
+    .aboutme .details .personal-details {
+      font-size: 1.1em; } }
+
+.contactme {
+  padding-top: 20px;
+  border-top: outset rgba(103, 58, 183, 0.16) 1px; }
+  .contactme .email-address a {
+    text-decoration: none;
+    color: black; }
+  .contactme .email-address p {
+    margin-top: 2px;
+    display: inline-block;
+    text-align: center;
+    font-family: "Overlock", cursive;
+    font-size: 1.4em;
+    font-weight: 400; }
+    .contactme .email-address p:hover {
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      transform: scale(1.05);
+      text-shadow: #b9b9ff 1px 1px;
+      text-decoration: underline; }
+  .contactme .social-icons {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    -webkit-box-pack: distribute;
+    -moz-box-pack: distribute;
+    box-pack: distribute;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: distribute; }
+    .contactme .social-icons img {
+      height: 50px;
+      width: 50px; }
+      .contactme .social-icons img:hover {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1); }
+  .contactme .contact-form {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left; }
+    .contactme .contact-form label p {
+      color: #334cc6;
+      display: block;
+      font-family: "Overlock SC", cursive;
+      font-size: 0.8em;
+      font-weight: 500;
+      line-height: 1;
+      margin-bottom: 0; }
+    .contactme .contact-form label input[type="text"], .contactme .contact-form label input[type="email"] {
+      width: 80%;
+      height: 30px;
+      padding-left: 4px;
+      border-radius: 4px; }
+    @media screen and (max-width: 540px) {
+      .contactme .contact-form label input[type="text"], .contactme .contact-form label input[type="email"] {
+        width: 95%;
+        height: 28px; } }
+    .contactme .contact-form p:last-of-type {
+      margin-bottom: 10px; }
+      .contactme .contact-form p:last-of-type input {
+        width: 50%;
+        height: 50px; }
+    .contactme .contact-form textarea {
+      width: 100%;
+      height: 200px;
+      resize: none; }
+    .contactme .contact-form input[type="submit"] {
+      float: right;
+      background: -webkit-linear-gradient(#8080FF, #8080BB);
+      background: linear-gradient(#8080FF, #8080BB);
+      color: #334cc6;
+      font-size: 0.75em; }
+  @media screen and (max-width: 940px) {
+    .contactme .contact-form {
+      width: 90%; } }
+  @media screen and (max-width: 540px) {
+    .contactme .contact-form {
+      width: 94%; }
+      .contactme .contact-form label input[type="text"], .contactme .contact-form label input[type="email"] {
+        width: 100%; }
+      .contactme .contact-form input[type="submit"] {
+        float: none;
+        width: 90%;
+        height: 30px;
+        margin: 0 4%;
+        font-size: 0.6em; } }
+
+footer {
+  background: -webkit-linear-gradient(#e9e9ff, #8080FF);
+  background: linear-gradient(#e9e9ff, #8080FF);
+  margin-top: 50px; }
+  footer .site-links {
+    display: inline-block;
+    max-width: 720px;
+    margin: 0px auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: distribute;
+    -moz-box-pack: distribute;
+    box-pack: distribute;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: distribute; }
+    footer .site-links a {
+      display: inline-block;
+      margin-left: 50px;
+      text-decoration: none;
+      color: rgba(100, 100, 255, 0.3);
+      font-family: "Overlock SC", cursive;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase; }
+      footer .site-links a:hover {
+        color: rgba(100, 100, 255, 0.8); }
+  @media screen and (max-width: 720px) {
+    footer .site-links {
+      margin-left: -10%; } }
+  footer .wrap {
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    padding: 20px 30px;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center; }
+    footer .wrap .logo {
+      height: 50px;
+      width: 50px;
+      background: #999;
+      float: left;
+      margin: 20px 0 5px;
+      border-radius: 5px; }
+      footer .wrap .logo img {
+        height: 50px;
+        width: 50px; }
+    footer .wrap .address {
+      display: inline-block;
+      font-family: "Overlock", cursive;
+      float: left;
+      padding-left: 30px;
+      font-size: 1em;
+      font-weight: 200; }
+    footer .wrap .creative-commons {
+      height: 50px;
+      width: 50px;
+      float: right;
+      display: inline-block;
+      margin: 20px 0 5px; }
+      footer .wrap .creative-commons img {
+        height: 50px;
+        width: 50px; }
+
+.full-h {
+  height: 700px;
+  position: relative; }
+
+.welcome .welcome-mat .words {
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  background: red; }
+
+.who-am-I, .guitarista, .pythonista, .learner {
+  margin: 2% 2%;
+  background: url("/assets/images/Guitar.png") center no-repeat;
+  background-size: contain; }
+  .who-am-I .intro-line p, .guitarista .intro-line p, .pythonista .intro-line p, .learner .intro-line p {
+    font-family: "Overlock SC", cursive;
+    font-size: 15pt;
+    font-weight: 400; }
+  .who-am-I .character-line, .guitarista .character-line, .pythonista .character-line, .learner .character-line {
+    position: relative;
+    top: 40%; }
+    .who-am-I .character-line h4, .guitarista .character-line h4, .pythonista .character-line h4, .learner .character-line h4 {
+      text-align: center;
+      font-family: "Over the Rainbow", cursive;
+      font-size: 30pt;
+      font-weight: 700; }
+
+@media screen and (max-width: 450px) {
+  .who-am-I, .guitarista, .pythonista, .learner {
+    margin: 5% 2%; }
+    .who-am-I .intro-line p, .guitarista .intro-line p, .pythonista .intro-line p, .learner .intro-line p {
+      font-size: 15pt; }
+    .who-am-I .character-line, .guitarista .character-line, .pythonista .character-line, .learner .character-line {
+      top: 40%; }
+      .who-am-I .character-line h4, .guitarista .character-line h4, .pythonista .character-line h4, .learner .character-line h4 {
+        font-size: 20pt; } }
+.who-you-are {
+  background: blue; }
+  .who-you-are .hoping-who-you-are {
+    font-family: "Overlock", cursive;
+    font-size: 24pt;
+    font-weight: 400; }
+  .who-you-are .people-tiles {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+    padding-top: 20px;
+    background: purple;
+    position: relative;
+    height: 60%; }
+    .who-you-are .people-tiles .tile {
+      height: 48%;
+      width: 48%;
+      display: inline-block;
+      float: left;
+      background: gray; }
+      .who-you-are .people-tiles .tile .icon-somethin img {
+        max-width: 100px;
+        float: left;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-left: 5px; }
+      .who-you-are .people-tiles .tile .designation {
+        background: red; }
+        .who-you-are .people-tiles .tile .designation h3 {
+          border-bottom: solid #333 2px;
+          display: inline-block;
+          font-size: 18px; }
+      .who-you-are .people-tiles .tile .phrase {
+        display: inline; }
+        .who-you-are .people-tiles .tile .phrase p {
+          font-size: 1.1em;
+          display: flex; }
+
+@media screen and (max-width: 730px) {
+  .who-am-I, .guitarista, .pythonista, .learner {
+    margin: 5% 2%; }
+    .who-am-I .intro-line p, .guitarista .intro-line p, .pythonista .intro-line p, .learner .intro-line p {
+      font-size: 15pt; }
+    .who-am-I .character-line, .guitarista .character-line, .pythonista .character-line, .learner .character-line {
+      top: 40%; }
+      .who-am-I .character-line h4, .guitarista .character-line h4, .pythonista .character-line h4, .learner .character-line h4 {
+        font-size: 20pt; }
+
+  .who-you-are .people-tiles .tile .icon-somethin img {
+    max-width: 100%;
+    height: 80px; }
+  .who-you-are .people-tiles .tile .designation h3 {
+    font-size: 13pt; }
+  .who-you-are .people-tiles .tile .phrase p {
+    font-size: 0.9em; } }
+@media screen and (max-width: 680px) {
+  .who-you-are .people-tiles {
+    height: 40%; }
+    .who-you-are .people-tiles .tile .icon-somethin img {
+      max-width: 100%;
+      height: 59px; }
+    .who-you-are .people-tiles .tile .designation h3 {
+      font-size: 10pt; }
+    .who-you-are .people-tiles .tile .phrase p {
+      font-size: 8pt; } }
+@media screen and (max-width: 540px) {
+  .who-you-are .people-tiles {
+    display: flex; }
+    .who-you-are .people-tiles .tile {
+      display: block;
+      width: 100%;
+      float: none;
+      height: 33%; }
+      .who-you-are .people-tiles .tile .icon-somethin img {
+        max-width: 100%;
+        height: 59px; }
+      .who-you-are .people-tiles .tile .designation h3 {
+        font-size: 10pt; }
+      .who-you-are .people-tiles .tile .phrase p {
+        font-size: 8pt; } }
+
+/*# sourceMappingURL=all.css.map */

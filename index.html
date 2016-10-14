@@ -1,0 +1,49 @@
+---
+layout: default
+tabtitle: AntiFragilista
+lang: en
+---
+
+<header>
+
+	<div class="logo">
+		<img src="{{ site.baseurl }}/assets/images/Next.png">
+	</div>
+
+	<nav>  
+		<a href="joke">Home </a><a>|</a>
+		<a href="mabina">About </a><a>|</a>
+		<a href="blog"> Cool Projects </a><a>|</a>
+		<span class="search">
+			{% include icons/finder.html %}
+		</span>
+	</nav>
+
+</header>
+<button style="
+
+    position: initial;
+    float: right;
+    width: 70px;
+    height: 30px;
+    color: #FFC107;
+    background-color: cornflowerblue;">
+
+	{% if page.lang == 'en' %}
+		<a href="{{ site.baseurl }}{{ page.url}}sw"> En|Sw </a>
+	{% endif %}
+
+</button>
+
+  {% include hero.html %}
+
+  <div class="container">
+    {% include aboutme.html %}
+
+    {% include contactme.html %}
+
+
+  </div>
+
+  {% include footer.html %}
+

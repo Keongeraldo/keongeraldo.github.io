@@ -1,0 +1,111 @@
+body
+	+background(linear-gradient($bgcolor, #efefff))
+
+header
+	height: 50px
+	+background(linear-gradient(#8080FF, $bgcolor))
+	// background-color: 
+
+	position: relative
+	// background-size: cover
+
+	.logo
+		display: inline-block
+		float: left
+		margin-left: 20px
+
+		img
+			+size(35px)
+			position: absolute
+			top: 50%
+			margin-top: -17.5px
+		// svg
+		// 	height: 100%
+		// 	width: auto
+
+
+	nav
+		float: right
+		margin-right: 20px
+		height: 20px
+		position: relative
+		top: 50%
+		margin-top: -10px
+
+		a
+			display: inline-block
+			margin-left: 28px
+
+			color: rgba(0,0,0, 0.6)
+			font:
+				family: $OverlockSC
+				size: 14pt
+
+			&:hover
+				color: rgba(0,0,0, 0.99)
+
+		.search
+			+size(16px)
+			display: inline-block
+
+	@media screen and (max-width: 540px)
+		.logo
+			img
+				+size(25px)
+
+		nav
+			a
+				font-size: 10pt
+				margin-left: 18px
+
+			.search
+				+size(12px)
+
+	@media screen and (max-width: 400px)
+		.logo
+			img
+				+size(20px)
+
+		nav
+			a
+				font-size: 8pt
+				margin-left: 8px
+
+			.search
+				+size(10px)
+
+	@media screen and (max-width: 280px)
+		.logo
+			display: block
+			float: none
+			text-align: center
+			img
+				+size(20px)
+				transiton: translate(-10, 0)
+
+		nav
+			float: none
+			text-align: center
+			a
+				font-size: 6pt
+				margin-left: 2px
+
+			.search
+				+size(6px)
+
+	@media screen and (max-width: 160px)
+		.logo
+			display: block
+			float: none
+			margin: 0 auto
+			img
+				+size(14px)
+
+		nav
+			float: none
+			text-align: center
+			a
+				font-size: 2pt
+
+			.search
+				display: none

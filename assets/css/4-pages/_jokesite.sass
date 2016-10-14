@@ -1,0 +1,181 @@
+.full-h
+	height: 700px
+	position: relative
+
+.welcome
+	.welcome-mat
+		.words
+			+size(400px)
+			margin: 0 auto
+			background: red
+
+	.welcome-waiting
+		p
+
+
+.who-am-I, .guitarista, .pythonista, .learner
+	margin: 2% 2%
+	background: url('/assets/images/Guitar.png') center no-repeat
+	background-size: contain
+
+	.intro-line
+		p
+			font:
+				family: $OverlockSC
+				size: 15pt
+				weight: 400
+
+	.character-line
+		position: relative
+		top: 40%
+
+		h4
+			text-align: center
+			font:
+				family: $OverTR
+				size: 30pt
+				weight: 700
+
+@media screen and (max-width: 450px)
+	.who-am-I, .guitarista, .pythonista, .learner
+		margin: 5% 2%
+
+		.intro-line
+			p
+				font-size: 15pt
+	
+
+		.character-line
+			top: 40%
+
+			h4
+				font-size: 20pt
+
+
+.who-you-are
+	background: blue
+	.hoping-who-you-are
+		font:
+			family: $Overlock
+			size: 24pt
+			weight: 400
+
+	.people-tiles
+		max-width: 1000px
+		margin: 0 auto
+		border-radius: 20px
+		padding: 10px
+		padding-top: 20px
+		background: purple
+		position: relative
+		height: 60%
+
+		.tile		
+			+size(48%)
+			display: inline-block
+			float: left
+			background: gray
+
+			.icon-somethin
+				img
+					max-width: 100px
+					float: left
+					padding-right: 20px
+					padding-top: 20px
+					padding-left: 5px
+			
+			.designation
+				background: red
+				h3
+					border-bottom: solid #333 2px
+					display: inline-block
+					font-size: 18px
+			.phrase
+				display: inline
+				p
+					font-size: 1.1em
+					display: flex
+
+		// .tile:nth-child(2n+1)
+		// 	margin-left: 2%
+		// 	border-right: solid #333 1px
+		// .tile:nth-child(2n)
+		// 	margin-right: 1%
+		// .tile:nth-child(3), .tile:nth-child(4)
+		// 	border-top: solid #333 1px
+
+
+
+	// .even-though
+	// 	clear: both
+	// 	p
+
+@media screen and (max-width: 730px)
+	.who-am-I, .guitarista, .pythonista, .learner
+		margin: 5% 2%
+
+		.intro-line
+			p
+				font-size: 15pt
+	
+
+		.character-line
+			top: 40%
+
+			h4
+				font-size: 20pt
+
+	.who-you-are
+		.people-tiles
+			.tile
+				.icon-somethin
+					img
+						max-width: 100%
+						height: 80px
+				.designation
+					h3
+						font-size: 13pt
+				.phrase
+					p
+						font-size: 0.9em
+
+@media screen and (max-width: 680px)
+	.who-you-are
+		.people-tiles
+			height: 40%
+
+			.tile
+				.icon-somethin
+					img
+						max-width: 100%
+						height: 59px
+				.designation
+					h3
+						font-size: 10pt
+				.phrase
+					p
+						font-size: 8pt
+
+@media screen and (max-width: 540px)
+	.who-you-are
+		.people-tiles
+			display: flex
+
+			.tile
+				display: block
+				width: 100%
+				float: none
+				height: 33%
+
+				.icon-somethin
+					img
+						max-width: 100%
+						height: 59px
+				.designation
+					h3
+						font-size: 10pt
+				.phrase
+					p
+						font-size: 8pt
+
+// @media screen and (max-width: 540px)

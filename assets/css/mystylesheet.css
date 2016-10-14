@@ -1,0 +1,500 @@
+
+.mabina {
+    
+}
+.body {
+    font-family: 'Overlock', cursive;
+}
+header {
+    margin-bottom: 10px;
+    background-color: crimson;
+    position: relative;
+}
+
+header .logo{
+    display: inline;
+    margin-left: 30px;
+}
+
+nav {
+    float: right;
+    margin-right: 5%;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+header nav {
+    position: absolute;
+    top: 35%;
+    right: 0;
+}
+
+header nav a {
+    background-color: blueviolet;
+    /* border: solid 1px; */
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: 'Overlock SC', sans-serif;
+}
+
+header nav a:visited {
+    background: #9938f3;
+    color: black;
+}
+
+header nav a:visited {
+    background: blueviolet;
+    color: black;
+}
+
+.container {
+    clear: both;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.post-heading {
+    /* background-color: pink; */
+    text-align: center;
+    text-shadow: #3d5d79 5px 0px 14px;
+    color: #350f58;
+    margin-bottom: -14px;
+}
+
+.post-heading h2 {
+    font-family: 'Over the Rainbow';
+    line-height: 1.3;
+    margin: -10px;
+    margin-bottom: -5px;
+    margin-top: 15px;
+    font-size: 35pt;
+}
+
+.post-heading img {
+    max-width: 50%;
+    margin-top: -0.6%;
+}
+.ribbon {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 255, 255, 0.15);
+}
+
+span.share {
+    height: 100%;
+    width: 20px;
+    /* background: #4CAF50; */
+    display: inline-flex;
+    padding: 1%;
+}
+span.share img {
+    height: 50px;
+    cursor: pointer;
+}
+
+span.share img:hover {
+    transform: translate(2px, 1px);
+}
+.ribbon-card.post-meta {/* display: table-caption; */float: right;background-color: red;margin-top: 48%;font-size: xx-large;}
+
+@media screen and (max-width: 540px){
+    nav {
+        float: right;
+        margin-top: 0%;
+        margin-right: 6%;
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+
+    header .logo img{
+        max-width: 100%;
+        height: 50px;
+    }
+
+    .post-heading h2{
+        font-size: 1.3em;
+    }
+    .post-heading {
+        margin-top: 18px;
+    }
+    .post-meta {
+        font-size: 9pt;
+        line-height: 0.9;
+        padding: 0 4px;
+    }
+}
+
+
+.post-content p {
+    font-size: 18pt;
+    font-weight: 500;
+    font-family: 'Overlock', cursive;
+}
+
+.post-media {
+    /* background-color: chartreuse; */
+    width: 80%;
+    margin: 20px auto 5%;
+    position: relative;
+}
+.post-image {
+    width: 100%;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+    display: block;
+    text-align: center;
+}
+.post-media .post-image img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+.media-captions {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.media-captions p {
+    font-size: large;
+    font-style: italic;
+    font-family: 'Overlock', 'Helvetica', cursive;
+    color: darkgray;
+    padding: 10px;
+    display: block;
+}
+
+table.post-table {
+    background-color: yellowgreen;
+    width: 70%;
+    margin: 0 auto;
+    outline: springgreen solid;
+    text-align: center;
+}
+
+.photo-credits {
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 14pt;
+    background-color: aliceblue;
+}
+
+.photo-credits em.credit {
+    display: block;
+}
+
+.post-cards {
+    /* background-color: #377311; */
+    display: inline-block;
+    margin-top: 16px;
+}
+.post-cards a:visited {
+    color: cornflowerblue;
+}
+
+.tile {
+    background-color: #fbfbfb;
+    box-shadow: 0px 0px 4px 0.1px;
+    width: 49%;
+    float: left;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 0.9%;
+    margin-top: 0.9%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(250, 235, 215, 0.46);
+}
+.tile:hover {
+    box-shadow: #E91E63 0px 0px 2px 2px;
+    cursor: pointer;
+}
+.underlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(7, 72, 255, 0.48);
+    display: inline-block;
+    border-radius: 5px;
+}
+.underlay.sw {
+   background: rgba(0, 124, 212, 0.34);
+}
+.tile h3 {
+    background-color: rgba(255, 255, 244, 0.90);
+    display: flex;
+    font-size: 1.5em;
+    padding: 0 4px;
+    text-shadow: #3d5d79 5px 0px 14px;
+    color: #350f58;
+    font-family: 'Over the Rainbow', cursive;
+}
+
+.tile-bottom {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%
+}
+.post-meta {
+    float: right;
+    background-color: rgba(0, 255, 255, 0.22);
+    font-family: 'Overlock';
+    padding: 0 5px;
+}
+
+.tile .post-meta {
+    font-size: 0.95em;
+    line-height: 1;
+    padding: 0 11px;
+    border-bottom-right-radius: 7px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    background-color: rgba(0, 255, 255, 0.85);
+}
+
+.post-cards a:visited .tile .post-meta {
+    color: rgb(60, 60, 60);
+}
+
+footer {
+    font-family: 'Overlock';
+    display: flex;
+    justify-content: space-around;
+    background-color: beige;
+    margin-top: 30px;
+    bottom: 0;
+    position: relative;
+}
+
+footer .rigth-side {
+    display: flex;
+    align-items: center;
+}
+
+.social img {
+    max-width: 100%;
+    height: 33px;
+}
+
+.social a img:hover {
+    box-shadow: #00BCD4 0px 0px 4px 0px;
+}
+
+.creative-commons {
+    display: flex;
+    align-items: center;
+}
+footer nav{
+    margin-right: 0;
+    margin-top: 3.4%;
+}
+
+footer nav a{
+    color: black;
+}
+
+footer nav a:hover{
+    color: black;
+    text-shadow: 0px 0px 0.15px;
+}
+
+footer nav a:visited{
+    color: rgb(83, 84, 81);
+}
+
+footer p.awesome-readers {
+    text-align: center;
+    font-family: 'Bilbo';
+    line-height: 1;
+    margin: 0 auto 10px;
+    color: #b0bec5;
+    font-weight: 600;
+}
+
+
+footer address {
+    margin-left: 19px;
+}
+
+footer .middle-right {
+    display: flex;
+    align-items: center;
+}
+
+.small-contact {
+    text-align: center;
+    display: inline-block;
+    margin: 0 3%;
+}
+
+.small-contact h3 {
+    font-size: 11pt;
+    line-height: 0.8;
+    line-height: 0.01;
+}
+
+.small-contact p {
+    font-size: 1.2em;
+}
+
+.small-contact p a:hover{
+        text-shadow: 0px 0px 0px;
+}
+.small-contact p a:visted{
+    color: rgba(1, 1, 255, 0.90);
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px){
+    .tile {
+        height: 280px;
+    }
+}
+
+
+@media screen and (min-width: 900px) and (max-width: 1200px){
+    .tile {
+        height: 250px;
+    }
+    .tile h3{
+        font-size: 1.3em
+    }  
+
+    footer .rigth-side address{
+        font-size: 1.0em;
+    }
+
+    .tile .post-meta {
+        width: 200px;
+        padding: 0 8px;
+        font-size: 12pt;
+    } 
+    footer nav {
+        font-size: 1.0em;
+    }
+
+    footer img{
+        max-width: 100%;
+        height: 70px;
+    }
+
+    .small-contact{
+        font-size: 1.0em
+    }
+
+    .small-contact img{
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px){
+    .tile h3{
+        font-size: 1.1em;
+    } 
+      .tile {
+        height: 220px;
+    }  
+    .tile .post-meta {
+        width: 160px;
+        padding: 0 8px;
+        font-size: 10pt;
+    } 
+    footer {
+        font-size: 0.7em;
+    }
+    footer img{
+        max-width: 100%;
+        height: 50px;
+    }
+    footer .small-contact img{
+        height: 25px;
+    }
+}
+
+
+@media screen and (min-width: 540px) and (max-width: 700px){
+    .post-heading h2 {
+        font-size: 30pt;
+    } 
+    .tile {
+        height: 200px;
+    }  
+    .tile h3{
+        font-size: 0.9em
+    }  
+    .tile .post-meta {
+        width: 150px;
+        padding: 0 8px;
+        font-size: 9pt;
+    }    
+    footer {
+        font-size: 0.6em;
+    }
+    footer nav a{
+        font-size: 9pt;
+    }
+    footer img{
+        max-width: 100%;
+        height: 40px;
+    }
+    footer .small-contact img{
+        height: 22px;
+    }
+}
+
+@media screen and (max-width: 540px){
+      .tile {
+        height: 160px;
+        margin-left: 0.95%;
+    }  
+    .tile h3{
+        font-size: 0.8em
+    } 
+    .tile .post-meta {
+        padding: 0 4px;
+        width: 75%;
+        font-size: 0.5em
+    } 
+
+    /*Relating to posts page*/
+    .post-content p {
+        font-size: 13pt;
+    }
+    .post-media {
+        width: 100%;
+        margin: 10px auto 4%;
+        position: relative;
+    }
+    .media-captions p {
+        font-size: 9pt;
+        margin-top: 0;
+        padding: 1px;
+    }
+    .photo-credits{
+        font-size: 0.8em;
+    }
+    footer address {
+        font-size: 1.0em;
+        line-height: 1;
+        margin-left: 6px;
+    }
+    footer .small-contact h3{
+        font-size: 7pt;
+    }
+    footer {
+        font-size: 0.4em;
+    }
+    footer nav a{
+        font-size: 4pt;
+    }
+    footer img{
+        max-width: 100%;
+        height: 30px;
+    }
+    footer .small-contact img{
+        height: 16px;
+    }   
+}

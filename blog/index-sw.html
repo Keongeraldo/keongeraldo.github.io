@@ -1,0 +1,35 @@
+---
+layout: postsheaderandfooterTRUE-sw
+title: Gideonamani Blog
+lang: sw
+permalink: /blog/sw/
+---
+
+<div class="post-cards">
+
+
+{% for blogitem in site.blogstuff-sw %}
+	<a href="{{ site.baseurl }}{{ blogitem.url }}">
+		<div class="tile" style="background-image: url('{{site.baseurl}}/{{ blogitem.post-image }}');">
+			<div class="underlay sw">
+				<div class="ribbon-card">
+					<h3>{{ blogitem.postheading }}</h3>
+				</div>
+				
+				<div class="tile-bottom">
+					<div class="post-meta">
+						<div class="written-by">
+							<p>Imeandikwa na: Swahili Post</p>
+						</div>
+						<div class="posted-on">
+							<p>Imechapishwa: {{ blogitem.postedon }}</p>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</a>
+{% endfor %}
+
+
+</div>

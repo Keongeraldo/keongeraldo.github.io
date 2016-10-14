@@ -1,0 +1,98 @@
+.hero
+	margin-top: 20px
+	text-align: center
+	position: relative
+	.hero-engines
+		width: 90%
+		display: block
+		//background: pink
+		margin: 0 auto
+
+		img
+			max-width: 100%
+
+		.desktop
+			width: 100%
+			+display(flex)
+			+align-items(center)
+			+justify-content(space-around)
+
+			img
+				width: 40%
+
+			img.Front
+				width: 29%
+				+transition(transform 300ms ease-in-out 10ms)
+
+			img.Front:hover
+				+transform(rotateZ(810deg))
+
+			// img.Side:hover img.Front
+			// 	transform: rotateZ(790deg)
+
+
+	.nicknames
+		clear: both
+		padding-top: 30px
+		color: black
+		font:
+			family: $OverlockSC
+			size: 20pt
+
+		span
+			width: 18%
+			border-right: solid #000 2px
+			padding: 0 20px
+
+			a
+				text-decoration: none
+				color: black
+
+			a:visited
+				color: black
+
+
+		span:nth-last-child(1)
+			border-right: hidden
+
+		span:hover
+			border: 0  2px 0  2px solid #000
+			box-shadow: #673AB6 1px 2px 6px 6px
+			border-radius: 2px
+			border-left: solid #ccc 1px
+			border-right: solid #ccc 1px
+
+
+			
+
+	@media screen and (max-width: 720px)
+		.nicknames
+			font-size: 12pt
+
+	@media screen and (max-width: 540px)
+		.nicknames
+			font-size: 10pt
+
+	@media screen and (max-width: 450px)
+		.nicknames
+			font-size: 8.5pt
+		.hero-engines
+			.desktop
+				display: inline-block
+				text-align: center
+				img
+					width: 95%
+				img.Front
+					width: 64%
+
+	@media screen and (max-width: 340px)
+		.nicknames
+			font-size: 7pt
+
+	@media screen and (max-width: 240px)
+		.nicknames
+			font-size: 6pt
+
+	@media screen and (max-width: 100px)
+		.nicknames
+			font-size: 3pt

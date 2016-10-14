@@ -1,0 +1,34 @@
+---
+layout: postsheaderandfooterTRUE
+title: Gideonamani Blog
+lang: en
+---
+
+<div class="post-cards">
+
+
+{% for blogitem in site.blogstuff %}
+	<a href="{{ site.baseurl }}{{ blogitem.url }}">
+		<div class="tile" style="background-image: url('{{site.baseurl}}/{{ blogitem.post-image }}');">
+			<div class="underlay">
+				<div class="ribbon-card">
+					<h3>{{ blogitem.postheading }}</h3>
+				</div>
+				
+				<div class="tile-bottom">
+					<div class="post-meta">
+						<div class="written-by">
+							<p>Written by: {{ blogitem.writtenby }}</p>
+						</div>
+						<div class="posted-on">
+							<p>Posted On: {{ blogitem.postedon }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</a>
+{% endfor %}
+
+
+</div>

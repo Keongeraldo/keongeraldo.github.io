@@ -1,0 +1,18 @@
+<button style="
+
+    position: initial;
+    float: right;
+    width: 70px;
+    height: 30px;
+    color: #FFC107;
+    background-color: cornflowerblue;">
+
+	{% if page.lang == 'en' %}
+		<a href="{{ site.baseurl }}{{ page.url}}/sw"> En|Sw </a>
+	{% elsif page.lang == 'sw' %}
+		<a href="{{ site.baseurl }}{{ page.url | replace: '/sw/', '/' }}"> En|Sw </a>
+	{% else %}
+		<a href="{{ site.baseurl }}{{ page.url}}///"> En|Sw </a>
+	{% endif %}
+
+</button>

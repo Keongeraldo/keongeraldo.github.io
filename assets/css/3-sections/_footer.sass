@@ -1,0 +1,76 @@
+footer
+
+	+background(linear-gradient($bgcolor, #8080FF))
+	margin-top: 50px
+
+	.site-links
+		//display: none
+		display: inline-block
+		max-width: 720px
+		margin: 0px auto
+		+display(flex)
+		+align-items(center)
+		+justify-content(space-around)
+
+
+		a
+			display: inline-block
+			margin-left: 50px
+			text-decoration: none
+
+			color: rgba(100,100,255, 0.3)
+			font:
+				family: $OverlockSC
+				size: 14px
+				weight: 700
+			text-transform: uppercase
+
+			&:hover
+				color: rgba(100,100,255, 0.8)
+
+	@media screen and (max-width: 720px)
+		.site-links
+			margin-left: -10%
+
+	.wrap
+		margin: 0
+		padding: 0
+		height: 80px
+		padding: 20px 30px 
+		+align-items(center)
+		
+
+		.logo
+			+size(50px)
+			background: #999
+			float: left
+			margin: 20px 0 5px
+			border-radius: 5px
+
+			img
+				height: 50px
+				width: 50px
+
+		.address
+			display: inline-block
+			font-family: $Overlock
+			float: left
+			padding-left: 30px
+			font: 
+				size: 1em
+				weight: 200
+
+		.creative-commons
+			+size(50px)
+			float: right
+			display: inline-block
+			margin: 20px 0 5px
+
+			img
+				+size(50px)
+
+
+	// .tutorial
+	// 	+size(100px)
+	// 	border-radius: 10px
+	// 	+linear-gradient(#1e5799, #2989d8)
