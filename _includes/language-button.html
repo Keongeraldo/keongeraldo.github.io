@@ -1,4 +1,4 @@
-<button style="
+<!-- <button style="
 
     position: initial;
     float: right;
@@ -15,4 +15,24 @@
 		<a href="{{ site.baseurl }}{{ page.url}}///"> En|Sw </a>
 	{% endif %}
 
-</button>
+</button> -->
+<div class="language-switch-wrapper">
+	<label class="language-switch">
+
+	{% if page.lang == 'en' %}
+		<a href="{{ site.baseurl }}{{ page.url}}sw">
+		  <input type="checkbox">
+	{% elsif page.lang == 'sw' %}
+		<a href="{{ site.baseurl }}{{ page.url | replace: '/sw/', '/' }}">
+		  <input type="checkbox" checked="true">
+	{% else %}
+		<a href="{{ site.baseurl }}{{ page.url}}///">
+		  <input type="checkbox">
+	{% endif %}
+		  <span class="slider round">
+		  	<span class="leftie">en</span>
+		  	<span class="rightie">sw</span>
+		  </span>
+		</a>
+	</label>
+</div>
