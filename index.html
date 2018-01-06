@@ -20,20 +20,21 @@ lang: en
 	</nav>
 
 </header>
-<button style="
+	<div class="language-switch-wrapper">
+		<label class="language-switch">
 
-    position: initial;
-    float: right;
-    width: 70px;
-    height: 30px;
-    color: #FFC107;
-    background-color: cornflowerblue;">
+		{% if page.lang == 'en' %}
+			<a href="{{ site.baseurl }}{{ page.url}}sw">
+		{% endif %}
 
-	{% if page.lang == 'en' %}
-		<a href="{{ site.baseurl }}{{ page.url}}sw"> En|Sw </a>
-	{% endif %}
-
-</button>
+			  <input type="checkbox">
+			  <span class="slider round">
+			  	<span class="leftie">en</span>
+			  	<span class="rightie">sw</span>
+			  </span>
+			</a>
+		</label>
+	</div>
 
   {% include hero.html %}
 
